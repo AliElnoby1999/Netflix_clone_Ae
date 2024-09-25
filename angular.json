@@ -33,6 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": []
+               
           },
           "configurations": {
             "production": {
@@ -92,13 +93,17 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+           "styles": [
+     "node_modules/swiper/swiper.scss",      
+  "src/styles.scss"
+],            
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
