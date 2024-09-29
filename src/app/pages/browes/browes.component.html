@@ -1,0 +1,37 @@
+<app-header [userImg]="UserProfImg"></app-header>
+
+<app-banner 
+  [bannerTitle]="(bannerDetail$ | async)?.original_title"  
+  [bannerOverview]="(bannerDetail$ | async)?.overview"
+  [key]="(bannerVideo$ | async)?.results[4].key">
+</app-banner>
+<app-movie-cursol 
+[videoContents]="popularMovies" 
+[title]="'Popular on Netflix'">
+</app-movie-cursol>
+<app-movie-cursol 
+[videoContents]="tvShows" 
+[title]="'Trending TV shows'">
+</app-movie-cursol>
+
+<app-movie-cursol 
+[videoContents]="movies" 
+[title]="'Popular Movies'">
+</app-movie-cursol>
+
+<app-movie-cursol 
+[videoContents]="popularMovies" 
+[title]="'Now Playing Movies'">
+</app-movie-cursol>
+
+<app-movie-cursol 
+[videoContents]="topRatedMovies" 
+[title]="'Top Rated Movies'">
+</app-movie-cursol>
+
+<app-movie-cursol 
+[videoContents]="upcomingMovies" 
+[title]="'Upcoming Movies'">
+</app-movie-cursol>
+
+<!-- <app-footer></app-footer> -->
