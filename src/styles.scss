@@ -1,4 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'node_modules/swiper/swiper.scss'
+// html, body { height: 100%; };
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; };
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+    
+ @import '/node_modules/swiper/swiper.scss';
+@import  '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+//@import '~@angular/material/theming'; // Import Material theming
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.scss'; // Your preferred theme
+ @import '/node_modules/@angular/material/theming';
+ @import '/node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css'; // Your preferred theme
+
+@include mat-core(); 

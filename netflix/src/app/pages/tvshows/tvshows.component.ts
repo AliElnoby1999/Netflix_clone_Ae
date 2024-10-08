@@ -17,7 +17,7 @@ export class TvshowsComponent {
   constructor(private _Router:Router,private _MoviesService:MoiveService,private _snackBar: MatSnackBar) { }
   upcomingMovies:IVideoContent[]=[];
   FavData: number[] = [];
- UserProfImg=JSON.parse(sessionStorage.getItem("LoggedInUser")!).picture;
+  UserProfImg=JSON.parse(sessionStorage.getItem("LoggedInUser")!).picture;
 
   ngOnInit(): void {
     this._MoviesService.getTvShows().subscribe({
