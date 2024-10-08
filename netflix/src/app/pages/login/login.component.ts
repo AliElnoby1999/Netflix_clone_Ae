@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
  //decode the token
  //store in session
  //navigate to home
- if(response){
+ if(response){ 
  const payload=this.decodeToken(response.credential);
  sessionStorage.setItem("LoggedInUser",JSON.stringify(payload));
  document.body.style.overflowX = 'hidden';
