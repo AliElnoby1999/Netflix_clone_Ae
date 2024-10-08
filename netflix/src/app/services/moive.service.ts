@@ -27,7 +27,7 @@ export class MoiveService {
   } 
   
   getCastName(movieId: number){
-  
+       
     return this._HttpClient.get(`https://api.themoviedb.org/3/movie/${movieId}?append_to_response=credits`, options);
   }
   getMovies() {

@@ -32,7 +32,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     LoginComponent,
     NewspopularComponent,
     MovieCursolComponent
-  ],
+  ],     
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -47,7 +47,7 @@ export class TvshowsComponent {
     this._Router.navigate(['/details', id]);
   }
   addToFavorites(movie: IVideoContent) {
- 
+      
     console.log('Added to Favorites:', movie);
     if (!this.FavData.includes(movie.id)) {
       this.FavData.push(movie.id);

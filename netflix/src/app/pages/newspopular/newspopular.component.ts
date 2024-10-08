@@ -22,7 +22,7 @@ export class NewspopularComponent implements OnInit  {
     this.movieService.getPopularMovies().subscribe((data: any) => this.popularMovies = data.results);
     this.movieService.getPopularTvShows().subscribe((data: any) => this.popularTvShows = data.results);
   }
-
+     
   setHovercontent(movie: IVideoContent) {
     this.selectedContent = movie.title || movie.name || '';
   }

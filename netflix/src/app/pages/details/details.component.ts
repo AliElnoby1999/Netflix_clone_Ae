@@ -11,7 +11,7 @@ import { MoiveService } from 'src/app/services/moive.service';
 export class DetailsComponent {
   movieDetail: any;
   videoKey: string | null = null;
-
+     
   constructor(private route: ActivatedRoute, private moviesService: MoiveService,private sanitizer: DomSanitizer) {}
   UserProfImg=JSON.parse(sessionStorage.getItem("LoggedInUser")!).picture;
   limitedCast: any[] = [];

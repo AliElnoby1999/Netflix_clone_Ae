@@ -20,8 +20,7 @@ const routes: Routes = [
  {path:"mylist",component:MylistComponent,canActivate: [authGuard]},
  {path:"newspopular",component:NewspopularComponent,canActivate: [authGuard]},
   {path:"**", redirectTo:"login", pathMatch:"full"} //for 404 error
-];
-
+];      
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

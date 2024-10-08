@@ -18,7 +18,7 @@ export class HeaderComponent {
 signOut(){
   sessionStorage.removeItem('LoggedInUser');
   this._AuthService.SignOut();
-  
+    
 
 }
 }

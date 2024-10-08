@@ -1,7 +1,7 @@
 <app-header [userImg]="UserProfImg"></app-header>
 <div class="container px-20 mt-20 mb-20 flex flex-col min-h-screen">
   <p class="font-semibold text-2xl my-3 ml-3" *ngIf="favoriteMovies.length > 0">My List</p>
-  
+       
   <div class="flex-grow">
     <div *ngIf="favoriteMovies.length === 0" class="flex justify-center items-center h-full">
       <p class="text-gray-500 text-4xl">My List Is Empty</p>

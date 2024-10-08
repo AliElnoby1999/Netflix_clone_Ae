@@ -10,7 +10,7 @@ import Swiper from 'swiper';
 })
 export class MovieCursolComponent implements OnInit, AfterViewInit {
  
- 
+       
   
   @Input() videoContents: IVideoContent[] = [];
   @Input() title!: string;

@@ -48,7 +48,7 @@ export class FeaturedComponent {
 
   goToDetails(id: number) {
     this._Router.navigate(['/details', id]);
-  }
+  }     
   addToFavorites(movie: IVideoContent) {
  
     console.log('Added to Favorites:', movie);

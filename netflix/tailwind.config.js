@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{html,ts,scss}",
   ],
-  theme: {
+  theme: {    
     extend: {},
   },
   plugins: [],

@@ -79,7 +79,7 @@ export class MylistComponent {
                 panelClass: ['snackbar-success']
             });
         }
-    } else {
+    } else {      
         this._snackBar.open('Movie already in favorites!', 'Close', {
             duration: 3000,
             horizontalPosition: 'center',
